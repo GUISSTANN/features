@@ -1,3 +1,9 @@
-# Scripts calcul features
+# Traitement des données du projet
 
-Passer des données vers des fichiers compatibles avec CIDER
+## Contenu
+
+- Données synthétiques
+
+## Objectifs
+
+Regrouper les scripts du projet
