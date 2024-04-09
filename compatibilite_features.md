@@ -1,9 +1,15 @@
 # Ensemble des fonctions utilisées par CIDER pour calculer les features
 
+| Différentes fonctions pour créer des features  | Compatible avec le format des données   | Pourquoi ?  |
+| :--------------- |:---------------:| -----:|
+| Aligné à gauche  |   ce texte        |  Aligné à droite |
+| Aligné à gauche  | est             |   Aligné à droite |
+| Aligné à gauche  | centré          |    Aligné à droite |
 
--active_days(df)
--number_of_contacts(df)
--call_duration(df)
+
+-active_days(df) \\
+-number_of_contacts(df) \\
+-call_duration(df)\\
 -percent_nocturnal(df)
 -percent_initiated_conversations(df)
 -percent_initiated_interactions(df)
