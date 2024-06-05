@@ -1,4 +1,4 @@
-,ID_CM,Age_CM,Niveau_educ,Privation_eau,Privation_electricite,Privation_communication,Handicap_visuel,Hnadicap_auditif,Handicap_moteur,Score_privation,Score_handicap
+ID,ID_CM,Age_CM,Niveau_educ,Privation_eau,Privation_electricite,Privation_communication,Handicap_visuel,Hnadicap_auditif,Handicap_moteur,Score_privation,Score_handicap
 0,d65862c2b2c34aefb070a708718426b3,32,5,1,0,1,0,1,1,0.6666666666666666,0.6666666666666666
 1,5757c99a52d73d9b3e563a0046add2ee,21,5,0,1,1,1,1,0,0.6666666666666666,0.6666666666666666
 2,ed36b9182948943432386fa422a084b1,53,1,0,0,0,1,1,0,0.0,0.6666666666666666
