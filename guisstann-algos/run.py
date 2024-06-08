@@ -47,14 +47,16 @@ def run_random_forest(df: sql.DataFrame, variable: str):
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("--fichier", type=str, help="Fichier contenant les données à traiter")
+    parser.add_argument("--fichier", type=str, help="Fichiers contenant les données à traiter", nargs="+")
     parser.add_argument("--variable", type=str, help="Variable à prédire")
     parser.add_argument("--ignore", type=str, help="Variables à ignorer", nargs="+")
     args = parser.parse_args()
 
     # Initialisation de Spark
     spark = sql.SparkSession.builder.appName("guisstann-algos").getOrCreate()
-    data_df = spark.read.csv(args.fichier, header=True)
+    data_df = sql.DataFrame()
+    for file in args.fichier:
+        data_df = data_df.union(spark.read.csv(file, header=True))
     data_df = data_df.drop(*args.ignore)
     for col_name in data_df.columns:
         data_df = data_df.withColumn(col_name, col(col_name).cast("float"))
